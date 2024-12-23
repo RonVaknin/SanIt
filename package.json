@@ -1,0 +1,24 @@
+{
+  "name": "san-it",
+  "version": "1.0.0",
+  "description": "Keep your data clean.",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "tsc; node dist/test/run-tests.mjs"
+  },
+  "author": "Ron Vaknin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
